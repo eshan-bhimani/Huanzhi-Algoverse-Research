@@ -15,6 +15,50 @@ https://aws.amazon.com/blogs/machine-learning/ground-truth-generation-and-review
 Inputs
 
 
+1. Pipeline Architecture/Components
+- Prompt parser/NLU component
+- Function mapper (NL → CV2/skimage functions)
+- Parameter extraction logic
+- Execution engine
+- Error handling & validation
+2. Evaluation Metrics
+- Function selection accuracy (did it pick the right CV2 function?)
+- Image quality metrics (PSNR, SSIM, perceptual similarity)
+- Execution success rate
+- Parameter correctness
+- Response time/performance
+3. CV2/skimage Function Coverage
+- Supported operations by category:
+- Basic adjustments (brightness, contrast, saturation)
+- Filters (blur, sharpen, edge detection)
+- Transformations (rotate, resize, crop, flip)
+- Color space conversions
+- Morphological operations
+- Priority tiers (core vs. advanced functions)
+4. Dataset Structure
+- File organization/format
+- Metadata schema (JSON/YAML for each example)
+- Train/validation/test splits
+- Annotation format
+5. Test Cases & Examples
+- Simple single-operation examples
+- Multi-step operations
+- Edge cases (ambiguous prompts, impossible requests)
+- Concrete examples with expected I/O
+6. Outputs/Results Format
+- Generated images
+- Execution logs (function calls, parameters)
+- Evaluation reports
+- Error tracking
+7. Error Handling Strategy
+- Invalid/ambiguous prompts
+- Unsupported operations
+- Parameter out of bounds
+Image format incompatibilities
+8. Baseline & Comparison
+- Random baseline
+- Rule-based baseline
+- Other models/approaches to compare against
 
 
 
