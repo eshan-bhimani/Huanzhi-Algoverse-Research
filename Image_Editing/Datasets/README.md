@@ -44,6 +44,16 @@ This directory contains information and download scripts for high-quality image 
 
 [View Details](./PIE-Bench/README.md)
 
+### 5. OpenCV Samples
+**Type**: Testing & Case Studies | **Size**: Varied collection | **Source**: OpenCV GitHub
+
+- Official sample images from the OpenCV library
+- Classic computer vision test images and real-world photos
+- Ideal for demonstrating OpenCV functionality
+- Best for: Algorithm testing, tutorials, case studies
+
+[View Details](./OpenCV-Samples/README.md)
+
 ## Quick Start
 
 ### Installation
@@ -84,6 +94,7 @@ python download_samples.py
 | **InstructPix2Pix** | 450K | Train | Automatic | Large-scale pre-training |
 | **EditBench** | 240 | Eval | Manual | Fine-grained evaluation |
 | **PIE-Bench** | 700 | Eval | Manual | Comprehensive testing |
+| **OpenCV Samples** | Varied | Testing | Community | Algorithm testing & demos |
 
 ## Recommended Usage
 
@@ -100,6 +111,12 @@ python download_samples.py
 Use all datasets for comprehensive evaluation:
 - Train on InstructPix2Pix + MagicBrush
 - Evaluate on EditBench + PIE-Bench + MagicBrush test set
+
+### For Algorithm Testing & Demos
+Use OpenCV Samples for:
+- Quick prototyping and testing OpenCV functions
+- Creating tutorials and case studies
+- Demonstrating computer vision techniques
 
 ## Dataset Statistics
 
@@ -161,6 +178,17 @@ If you use these datasets in your research, please cite the respective papers:
 }
 ```
 
+**OpenCV:**
+```bibtex
+@misc{opencv_library,
+  author = {Bradski, G.},
+  title = {{The OpenCV Library}},
+  journal = {Dr. Dobb's Journal of Software Tools},
+  year = {2000},
+  howpublished = {\url{https://opencv.org}}
+}
+```
+
 ## Additional Resources
 
 ### Official Links
@@ -168,6 +196,7 @@ If you use these datasets in your research, please cite the respective papers:
 - InstructPix2Pix: https://www.timothybrooks.com/instruct-pix2pix
 - EditBench: https://research.google/blog/imagen-editor-and-editbench-advancing-and-evaluating-text-guided-image-inpainting/
 - PIE-Bench: https://paperswithcode.com/dataset/pie-bench
+- OpenCV Samples: https://github.com/opencv/opencv/tree/master/samples/data
 
 ### Community Resources
 - Papers with Code: Track latest benchmarks and leaderboards
