@@ -1,0 +1,19 @@
+GeoGuessr as a Vision Tool Use Benchmark
+The Core Task: Agent receives a Street View image and must use visual analysis tools (not just guess) to systematically narrow down the location through observable features.
+Tool Use Aspect: Instead of end-to-end "look at image → output coordinates," the agent must:
+Use CV tools to detect/extract features (road signs, architecture, vegetation, license plates)
+Query knowledge about what these features mean geographically
+Iteratively refine hypothesis through systematic analysis
+Justify reasoning with visual evidence
+Environment Setup:
+Google Street View API or pre-collected dataset of Street View images with ground truth coordinates
+Tool library: OpenCV for feature detection, OCR for text extraction, image classification models for architecture/vegetation/vehicle types
+Output: Predicted coordinates + reasoning trace showing which tools were used
+Metrics:
+Distance error (km from ground truth) (ground truth would be actual location/exact coordinates)
+Score bins (like actual GeoGuesser: 5000 pts for <1km, scaling down)
+Tool use effectiveness: Did agent extract the "right" features?
+Reasoning quality: Can it explain why it made its guess?
+Connecting Image Editing + GeoGuesser
+Shared Core: Vision-Based Tool Use for Analysis vs. Transformation
+Image Editing: Given visual input + instruction → transform the image using algorithmic tools GeoGuessr: Given visual input → analyze the image using algorithmic tools to extract actionable information
